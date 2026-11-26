@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OfficeSupply Online - Kit Escritório Premium</title>
+    <link rel="stylesheet" href="style-variant.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-content">
+            <a class="brand" href="#">OfficeSupply <span>Online</span></a>
+            <nav aria-label="Navegação principal">
+                <a href="#">Início</a>
+                <a href="#produto">Produtos</a>
+                <a href="#detalhes">Detalhes</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="breadcrumb">Início <span>/</span> Kits essenciais <span>/</span> Kit Escritório Premium</div>
+
+        <section class="product-detail" id="produto">
+            <div class="product-image">
+                
+                <img src="img001.jpeg" alt="Kit Escritório Premium com materiais de escritório">
+            </div>
+
+            <div class="product-info">
+              
+                <h1>Kit Escritório Premium Clássico</h1>
+                <p class="intro">Tudo o que você precisa para organizar melhor sua rotina de estudos ou trabalho, em um só kit.</p>
+
+                <div class="price-area">
+                    
+                    <strong class="current-price">R$ 299,90</strong>
+                </div>
+
+                <ul class="quick-benefits">
+                    <li>Itens essenciais reunidos em um único conjunto</li>
+                    <li>Organização para a mesa e para as anotações</li>
+                    <li>Uma opção prática para o dia a dia</li>
+                </ul>
+
+                <button class="add-to-cart-btn" id="add-to-cart">Adicionar ao carrinho</button>
+                <p class="cart-message" id="cart-message" role="status" aria-live="polite"></p>
+              
+            </div>
+        </section>
+
+        <section class="details-section" id="detalhes">
+            <div class="section-heading">
+                
+                <h2>O que vem no kit?</h2>
+
+                <p>Os itens básicos para deixar sua mesa mais prática e organizada.</p>
+            </div>
+            <div class="features-grid">
+                <article class="feature">
+                    <span class="feature-number">01</span>
+                    <h3>Canetas esferográficas</h3>
+                    <p>Ponta fina para anotações e tarefas do dia a dia.</p>
+                </article>
+                <article class="feature">
+                    <span class="feature-number">02</span>
+                    <h3>Caderno capa dura A5</h3>
+                    <p>Para registrar ideias, listas e compromissos.</p>
+                </article>
+                <article class="feature">
+                    <span class="feature-number">03</span>
+                    <h3>Bloco de notas adesivas</h3>
+                    
+                </article>
+                <article class="feature">
+                    <span class="feature-number">04</span>
+                    <h3>Organizador de mesa</h3>
+                    
+                </article>
+            </div>
+        </section>
+
+        <section class="suggestion">
+            <div>
+                <p class="eyebrow">VOCÊ TAMBÉM PODE GOSTAR</p>
+                
+                
+            </div>
+            <div class="suggestion-product">
+                <img src="mouse.jpg" alt="Mouse Ergonômico Bluetooth Silence">
+                <div>
+                    <strong>R$ 149,90</strong>
+                    <span>Tecnologia essencial</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>OfficeSupply Online</p>
+            <span>Praticidade para sua rotina.</span>
+        </div>
+    </footer>
+
+    <script>
+        const addButton = document.getElementById('add-to-cart');
+        const cartMessage = document.getElementById('cart-message');
+
+        addButton.addEventListener('click', function () {
+            cartMessage.textContent = 'Kit adicionado ao carrinho!';
+            addButton.textContent = 'Adicionado';
+            addButton.classList.add('added');
+        });
+    </script>
+</body>
+</html>
